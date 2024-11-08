@@ -23,5 +23,7 @@ public class App {
         server.setExecutor(null);
         server.start();
         System.out.println("Server started on port 8082");
+
+        // Keeps the server running indefinitely
     }
 }
