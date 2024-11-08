@@ -23,5 +23,8 @@ WORKDIR /app
 # Copy the built JAR file from the previous stage
 COPY --from=build /app/target/my-maven-project-1.0-SNAPSHOT.jar app.jar
 
+# Expose the port your application will run on
+EXPOSE 8082
+
 # Run the application
 CMD ["java", "-jar", "app.jar"]
